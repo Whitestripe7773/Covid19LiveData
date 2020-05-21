@@ -121,4 +121,11 @@ label, .navbar {
     height: 35%;
   }
 }
+
+
+@media only screen and (max-width: 320px) {
+  .trans-box {
+    height: 70%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
