@@ -19,7 +19,7 @@ $.getJSON("https://api.covid19api.com/summary", showdata = function(data){
 
     window.setInterval(function(){
         getData();
-    }, 10000);
+    }, 60000);
 });
 }
 
