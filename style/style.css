@@ -34,7 +34,7 @@ html, body {
 }
 
 .countrysearch-container {
-  font-size: 24px;
+  font-size: 16px;
   padding: 20px;
 }
 
@@ -89,6 +89,7 @@ label, .navbar {
 @media only screen and (max-width: 425px) {
   .trans-box {
     height: 30%;
+    font-size: 16px;
   }
   .b-search {
     margin-top: 10px;
@@ -103,12 +104,18 @@ label, .navbar {
   .trans-box {
     height: 30%;
   }
+  .result-container {
+    font-size: 16px;
+  }
   .b-search {
     margin-top: 10px;
     margin-bottom: 10px;
   }
   #countryName {
     width: 95%;
+  }
+  .footer-box {
+    font-size: 12px;
   }
 }
 
