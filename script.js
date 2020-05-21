@@ -27,6 +27,8 @@ function getCountryData(){
     $.getJSON("https://api.covid19api.com/summary", showdata = function(data){
 
     var country = getCountryName();
+    country = capitalizeFirstLetter(country);
+    console.log(country);
 
     var result = [];
     for (var i = 0; i < data.Countries.length; i++){
@@ -52,7 +54,9 @@ function getCountryData(){
 })
 }
 
-
+function capitalizeFirstLetter(string){
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 $(function() {
     var availableTags = [
