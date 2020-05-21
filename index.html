@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Live Data</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body onload="getData()">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png"></a>
+            <h1>Covid19 Live Data</h1>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="main-class">
+            <div class="trans-box">
+                <h3>Total:</h3>
+                <p class="confirmed"></p>
+                <p class="deaths"></p>
+                <p class="recovered"></p>
+            </div>
+            <div class="container countrysearch-container">
+                <div class="row">
+                    <div class="search-box col-sm">
+                        <form>
+                            <label for="countryName">Search by country: </label>
+                            <input type="text" id="countryName" placeholder="Country"> <br>
+                            <input class="btn btn-light b-search" type="button" value="Show data" onclick="getCountryData()";>
+                        </form>
+                    </div>
+                    <div class="col-sm result-container">
+                        <div class="country-box">
+                            <h2 class=country></h2>
+                            <p class="confirmed-country"></p>
+                            <p class="deaths-country"></p>
+                            <p class="recovered-country"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <footer class="py-5 bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col text-center footer-box">
+                        <p>Powered by the API from <a href="https://covid19api.com">Covid19api.com</a></p> <br>
+                        <p>©2020 - Whitestripe7773 </p>
+                        <a class="github" href="https://github.com/Whitestripe7773"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,124 @@
+html, body{
+    height: 100%;
+    margin: 0;    
+    color: white;
+}
+
+.navbar{
+    border-bottom: 10px solid black;
+}
+
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+    
+.main-class{
+    background: url("../img/backgroundearth.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trans-box{
+    padding: 20px;
+    height: 20%;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 20px;
+    opacity: 0.7;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+}
+
+.countrysearch-container{
+    font-size: 24px;
+    padding: 20px;
+}
+
+.country-box{
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 20px;
+    opacity: 0.7;    
+}
+
+label, .navbar{
+    color: white;    
+}
+
+.result-container{
+    color: black;    
+}
+    
+.deaths, .deaths-country{
+  color: red;
+}
+
+.recovered, .recovered-country{
+  color: green;
+}
+    
+.footer-box, .github{
+    color: white;
+    font-size: 20px;
+}
+
+.github{
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 768px){
+    .trans-box{
+        height: 25%;
+    }
+    .b-search{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; 
+        margin-bottom: 10px;   
+    }
+    #countryName{
+        width: 95%;    
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .trans-box{
+        height: 30%;
+    }
+    .b-search{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; 
+        margin-bottom: 10px;   
+    }
+    #countryName{
+        width: 95%;    
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .trans-box{
+        height: 30%;
+    }
+    .b-search{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px; 
+        margin-bottom: 10px;   
+    }
+    #countryName{
+        width: 95%;    
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .trans-box{
+        height: 35%;
+    }
+}
+
