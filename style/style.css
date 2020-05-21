@@ -117,4 +117,13 @@ label, .navbar {
     height: 35%;
   }
 }
+
+@media only screen and (max-width: 240px) {
+  .trans-box {
+    height: 40%;
+  }
+  .footer-box {
+    overflow: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
